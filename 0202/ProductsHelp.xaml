@@ -25,7 +25,6 @@
                             <TextBlock Grid.Column="1" Text="{Binding Quantity, StringFormat=Количество: {0}}" FontSize="14" HorizontalAlignment="Center" Foreground="#0C4882"/>
                             <TextBlock Grid.Column="2" Text="{Binding MinPrice, StringFormat={}{0:F2} р}" FontSize="14" HorizontalAlignment="Center" Foreground="#0C4882"/>
                         </Grid>
-
                     </Border>
                 </DataTemplate>
             </ListBox.ItemTemplate>

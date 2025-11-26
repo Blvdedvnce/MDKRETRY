@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:_0202"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="Работа с заявками" Height="450" Width="800" FontFamily="Bahnschrift Light SemiCondensed"
+        Title="Работа с заявками" Height="515" Width="800" FontFamily="Bahnschrift Light SemiCondensed"
         Background="#FFFFFF" Icon="/Новые технологии.ico">
 
     <Grid>
@@ -26,7 +26,27 @@
         <Label Content="Email:" HorizontalAlignment="Left" Margin="543,53,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#0C4882"/>
         <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="543,80,0,0" TextWrapping="Wrap" Background="#BBDCFA" VerticalAlignment="Top" Width="187" Height="26" FontSize="14"/>
         <Button Content="Сохранить" HorizontalAlignment="Left" Margin="543,140,0,0" VerticalAlignment="Top" Height="36" Width="187" FontSize="16" FontWeight="Bold" Background="#0C4882" Foreground="#FFFFFF" Click="Button_Click_1"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="56,370,0,0" VerticalAlignment="Top" Width="120" Height="36" Background="#0C4882" Foreground="#FFFFFF" Click="Button_Click"/>
-        <Image Margin="712,10,10,367" Source="/Новые технологии.png" Stretch="Fill"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="59,405,0,0" VerticalAlignment="Top" Width="120" Height="36" Background="#0C4882" Foreground="#FFFFFF" Click="Button_Click"/>
+        <!-- Выбор продукции -->
+        <Label Content="Продукция:" HorizontalAlignment="Left" Margin="543,180,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#0C4882"/>
+        <ComboBox x:Name="ProductBox" HorizontalAlignment="Left" Margin="543,207,0,0" VerticalAlignment="Top" Width="187" Height="26" Background="#BBDCFA" FontSize="14"/>
+
+        <!-- Количество -->
+        <Label Content="Количество:" HorizontalAlignment="Left" Margin="543,240,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#0C4882"/>
+        <TextBox x:Name="QtyBox" HorizontalAlignment="Left" Margin="543,267,0,0" VerticalAlignment="Top" Width="187" Height="26" Background="#BBDCFA" FontSize="14"/>
+
+        <!-- Кнопка добавления -->
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="543,303,0,0" VerticalAlignment="Top"
+        Width="187" Height="30" Background="#0C4882" Foreground="White" Click="AddProduct_Click"/>
+
+        <!-- ListBox товаров -->
+        <ListBox x:Name="CartList" HorizontalAlignment="Left" Margin="59,270,0,0" VerticalAlignment="Top"
+         Width="419" Height="130" Background="#BBDCFA" FontSize="14"/>
+
+        <!-- Итоговая стоимость -->
+        <Label x:Name="TotalPrice" Content="Итог: 0 руб." HorizontalAlignment="Left" Margin="543,340,0,0"
+       VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Foreground="#0C4882"/>
+
+        <Image Margin="712,10,10,433" Source="/Новые технологии.png" Stretch="Fill"/>
     </Grid>
 </Window>
